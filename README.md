@@ -76,6 +76,12 @@ print(result)
 
 # Reference
 
+1. https://aclanthology.org/2020.lrec-1.789.pdf
+2. https://arxiv.org/pdf/2106.06103.pdf
+3. https://arxiv.org/abs/2005.11129
+4. https://aclanthology.org/2020.emnlp-main.207.pdf
+5. https://github.com/mobassir94
+
 
 
 
