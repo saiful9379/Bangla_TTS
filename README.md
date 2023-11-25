@@ -22,6 +22,9 @@ For the single testing run,
 ```
 python inference.py
 ```
+or
+
+Inference on [jupyter notebook](inference.ipynb)
 
 
 # End Point API
