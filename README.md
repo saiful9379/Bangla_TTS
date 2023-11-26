@@ -1,5 +1,5 @@
 # Bangla TTS
-The Bangla TTS was traning mono(male) speaker using Vit tts model. The paper is ViT-TTS: Visual Text-to-Speech with Scalable Diffusion Transformer we used the coqui-ai🐸-toolkit for Bangla Text-to-Speech training as well as inference.
+The Bangla TTS was traning mono(male) speaker using Vit tts model. The paper is ViT-TTS: Visual Text-to-Speech with Scalable Diffusion Transformer, we used the coqui-ai🐸-toolkit for Bangla Text-to-Speech training as well as inference.
 
 __N.B : This pipeline only for inference as well as end point API testing purposes.__
 
