@@ -35,7 +35,7 @@ model_path, config_path = download_file(
 print("Done")
 
 
-def model_loading():
+def model_loading(model_path=None, config_path=None):
     tts_bn_model=Synthesizer(
         model_path,
         config_path,
@@ -90,7 +90,10 @@ if __name__ == "__main__":
   text = 'রওশন এরশাদের সঙ্গে দেখা করলেন জিএম কাদের।'
   fileName = 'logs/test_male.wav'
 
-  tts_bn_model = model_loading()
+  tts_bn_model = model_loading(
+    model_path=model_path, 
+    config_path=config_path
+    )
   audio= bangla_tts(
      model= tts_bn_model, 
      text = text, 
