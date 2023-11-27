@@ -4,6 +4,7 @@
 """
 import os
 import wget
+root_dir = os.getcwd()
 
 model_dict = {
     "male" : {
@@ -16,7 +17,7 @@ model_dict = {
     } 
 }
 
-def download_file(root_dir = "./", output_path="models", gender = "male"):
+def download_file(root_dir = "./", output_path="models", gender = "female"):
     path_dir = os.path.join(root_dir, output_path, gender)
 
     model_dir = os.path.join(path_dir, "pytorch_model.pth")
@@ -25,10 +26,11 @@ def download_file(root_dir = "./", output_path="models", gender = "male"):
 
 
     # print(model_dir)
+    os.makedirs(path_dir, exist_ok=True)
+
     if os.path.exists(model_dir) and  os.path.exists(config_dir):
        print("model and config already exits")
     else:
-        os.makedirs(output_path, exist_ok= True)
         wget.download(model_dict[gender]["config"], out=path_dir)
         wget.download(model_dict[gender]["model_path"], out=path_dir)
     
@@ -36,4 +38,4 @@ def download_file(root_dir = "./", output_path="models", gender = "male"):
 
 
 if __name__ == "__main__":
-  download_file()
+  model_dir, config_dir = download_file(root_dir=root_dir)
