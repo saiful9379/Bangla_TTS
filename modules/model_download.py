@@ -27,10 +27,10 @@ def download_file(root_dir = "./", output_path="models", gender = "male"):
     # print(model_dir)
     if os.path.exists(model_dir) and  os.path.exists(config_dir):
        print("model and config already exits")
-    # else:
-    #     os.makedirs(output_path, exist_ok= True)
-    #     wget.download(model_dict[gender]["config"], out=path_dir)
-    #     wget.download(model_dict[gender]["model_path"], out=path_dir)
+    else:
+        os.makedirs(output_path, exist_ok= True)
+        wget.download(model_dict[gender]["config"], out=path_dir)
+        wget.download(model_dict[gender]["model_path"], out=path_dir)
     
     return model_dir, config_dir
 
