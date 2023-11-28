@@ -16,24 +16,12 @@ from modules.synthsizer import Synthesizer
 bnorm=Normalizer()
 root_dir = os.getcwd()
 
-
 use_cuda = True
 DEBUG_SAVE = True
 
-
 # set pretrain model female or male
 DEBUG_GENDER = ["female", "male"]
-
 GENDER = DEBUG_GENDER[1]
-
-print("Model Downloading : .......")
-model_path, config_path = download_file(
-   root_dir=root_dir, 
-   output_path="models", 
-   gender=GENDER
-   )
-print("Done")
-
 
 def model_loading(model_path=None, config_path=None):
     tts_bn_model=Synthesizer(
@@ -89,6 +77,14 @@ if __name__ == "__main__":
 
   text = 'রওশন এরশাদের সঙ্গে দেখা করলেন জিএম কাদের।'
   fileName = 'logs/test_male.wav'
+   
+   print("Model Downloading : .......")
+   model_path, config_path = download_file(
+      root_dir=root_dir, 
+      output_path="models", 
+      gender=GENDER
+      )
+   print("Done")
 
   tts_bn_model = model_loading(
     model_path=model_path, 
