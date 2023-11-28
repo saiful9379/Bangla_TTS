@@ -78,13 +78,13 @@ if __name__ == "__main__":
   text = 'রওশন এরশাদের সঙ্গে দেখা করলেন জিএম কাদের।'
   fileName = 'logs/test_male.wav'
    
-   print("Model Downloading : .......")
-   model_path, config_path = download_file(
-      root_dir=root_dir, 
-      output_path="models", 
-      gender=GENDER
-      )
-   print("Done")
+  print("Model Downloading : .......")
+  model_path, config_path = download_file(
+    root_dir=root_dir, 
+    output_path="models", 
+    gender=GENDER
+    )
+  print("Done")
 
   tts_bn_model = model_loading(
     model_path=model_path, 
