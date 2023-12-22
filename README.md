@@ -17,6 +17,14 @@ Install require modules
 ```
 pip install -r requirements.txt
 ```
+# Dataset
+
+
+
+# Training
+
+Training code [jupyter](train_bangla_vits.ipynb) 
+
 
 # Single Test[Inference]
 
@@ -28,6 +36,8 @@ python inference.py
 or
 
 Inference on [jupyter notebook](inference.ipynb)
+
+[huggingface](https://huggingface.co/bangla-speech-processing/bangla_tts_female)
 
 
 # End Point API
