@@ -1,13 +1,13 @@
 
 # Bangla TTS
-The Bangla TTS was traning mono(male) speaker using Vit tts model. The paper is ViT-TTS: Visual Text-to-Speech with Scalable Diffusion Transformer, we used the coqui-ai🐸-toolkit for Bangla Text-to-Speech training as well as inference.
+The Bangla TTS was training mono(male) speakers using Vit TTS model. The paper is ViT-TTS: Visual Text-to-Speech with Scalable Diffusion Transformer, we used the coqui-ai🐸-toolkit for Bangla Text-to-Speech training as well as inference.
 
 __N.B : This pipeline only for inference as well as end point API testing purposes.__
 
 __Please check the faster test into [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ea_BVSinWFy_9W2AH7NI55Ur0XO4Tr-a?usp=sharing)
 
 # Requiremnts
-Create Enviroments
+Create Environments
 ```
 conda create -n bn_tts python==3.8
 conda activate bn_tts
@@ -18,6 +18,11 @@ Install require modules
 pip install -r requirements.txt
 ```
 # Dataset
+
+Bangla Speech corpus prepared by the Indic TTS Team of IIT Madras. I've downsampled the dataset down to 22050 and converted the raw iitm annotation format into ljspeech format for training several TTS models for bangla.
+in this dataset, i am sharing the final processed dataset for Bangla TTS along with trained best models weight files. please cite this paper: https://aclanthology.org/2020.lrec-1.789.pdf if you are using the dataset in your research works.
+
+Dataset link: https://www.kaggle.com/datasets/mobassir/comprehensive-bangla-tts
 
 
 
